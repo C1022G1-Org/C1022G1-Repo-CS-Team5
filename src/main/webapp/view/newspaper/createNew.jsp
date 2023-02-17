@@ -28,7 +28,7 @@
 <body>
 <h1>News Spaper</h1>
 <h2>
-    <a href="">List All Newspaper</a>
+    <a href="/newspaper">List All Newspaper</a>
 </h2>
 <div>
     <form method="post">
