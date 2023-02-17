@@ -28,7 +28,7 @@
 <body>
 <h1>News Spapers</h1>
 <h2>
-    <a href="">List News Spapers</a>
+    <a href="/newspaper">List News Spapers</a>
 </h2>
 <div>
     <form method="post">

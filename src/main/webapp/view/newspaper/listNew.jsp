@@ -20,41 +20,29 @@
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-<h1>NewSpaper Management</h1>
-<h2>
-    <a href="">Add NewSpaper</a>
-</h2>
-<div>
-    <table border="1" cellpadding="5">
-        <caption><h2>List Of Member</h2></caption>
+<a href="/newspaper?action=createNew" class="btn btn-secondary mb-4">Thêm mới NewSpaper</a>
+<table class="table">
+    <thead>
+    <tr>
+        <th>STT</th>
+        <th>Title</th>
+        <th>Content</th>
+        <th>CreateDate</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </tr>
+    </thead>
+    <tbody>
+    <c:forEach var="newSpaper" items="${newSpaper}" varStatus="stt">
         <tr>
-            <th>ID</th>
-            <th>Title</th>
-            <th>Content</th>
-            <th>CreatDate</th>
-            <th>AccountName</th>
-            <th>CatalogingName</th>
-            <th>Edit</th>
-            <th>Delete</th>
+            <td>${stt.count}</td>
+            <td>${newSpaper.title}</td>
+            <td>${newSpaper.content}</td>
+            <td>${newSpaper.createDate}</td>
         </tr>
-        <c:forEach var="newspaper" items="${newspaperlist}" varStatus="stt">
-            <tr>
-                <td>${stt.count}</td>
-                <td>${newspaper.title}</td>
-                <td>${newspaper.content}</td>
-                <td>${newspaper.createDate}</td>
-                <td>${newspaper.accountName}</td>
-                <td>${newspaper.catalogingName}</td>
-                <td>
-                    <a href="/member?action=edit$id=${member.id}">Edit</a>
-                </td>
-                <td>
-                    <button type="button" onclick="delete('${newspaper.id}','${newspaper.name}')" class="btn btn-primary">Delete</button>
-                </td>
-            </tr>
-        </c:forEach>
-    </table>
-</div>
+    </c:forEach>
+    </tbody>
+</table>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

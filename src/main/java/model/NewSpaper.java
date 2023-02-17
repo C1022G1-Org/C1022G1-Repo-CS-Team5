@@ -16,6 +16,12 @@ public class NewSpaper {
         this.createDate = createDate;
     }
 
+    public NewSpaper(String title, String content, String createDate) {
+        this.title = title;
+        this.content = content;
+        this.createDate = createDate;
+    }
+
     public int getId() {
         return id;
     }
