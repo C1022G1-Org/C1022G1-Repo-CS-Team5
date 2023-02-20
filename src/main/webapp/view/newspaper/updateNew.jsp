@@ -26,25 +26,24 @@
             crossorigin="anonymous"></script>
 </head>
 <body>
-<h1>News Spaper</h1>
+<h1>News Spapers</h1>
 <h2>
-    <a href="/newspaper">List All Newspaper</a>
+    <a href="/newspaper">List News Spapers</a>
 </h2>
 <div>
-    <form method="post">
-        <div class="form-group">
-            <label for="title">Input Title</label>
-            <input type="text" class="form-control" name="title" id="title">
-        </div>
-        <div class="form-group">
-            <label for="content">Input Content</label>
-            <input type="text" class="form-control" name="content" id="content">
-        </div>
-        <div class="form-group">
-            <label for="createDate">Input Create Date</label>
-            <input type="text" class="form-control" name="createDate" id="createDate">
-        </div>
-        <input class="btn btn-primary" type="submit" value="Tạo">
+    <form method="post" class="form-group">
+                <input type="hidden" value="${newspaper.new_id}">
+
+                <label for="title">Input Title</label>
+                <input type="text" class="form-control" name="title" id="title" value="${newspaper.title}">
+
+                <label for="content">Input Content</label>
+                <input type="text" class="form-control" name="content" id="content" value="${newspaper.content}">
+
+                <label for="createDate">Input Create Date</label>
+                <input type="text" class="form-control" name="createDate" id="createDate" value="${newspaper.date_submitted}">
+
+            <input type="submit" value="Cập Nhật" class="btn btn-primary">
     </form>
 </div>
 <!-- Optional JavaScript -->
@@ -61,3 +60,4 @@
 <script src="js/bootstrap.js"></script>
 </body>
 </html>
+

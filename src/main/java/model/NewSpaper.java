@@ -4,22 +4,22 @@ public class NewSpaper {
     private int id;
     private String title;
     private String content;
-    private String createDate;
+    private String date_submitted;
 
     public NewSpaper() {
     }
 
-    public NewSpaper(int id, String title, String content, String createDate) {
+    public NewSpaper(int id, String title, String content, String date_submitted) {
         this.id = id;
         this.title = title;
         this.content = content;
-        this.createDate = createDate;
+        this.date_submitted = date_submitted;
     }
 
-    public NewSpaper(String title, String content, String createDate) {
+    public NewSpaper(String title, String content, String date_submitted) {
         this.title = title;
         this.content = content;
-        this.createDate = createDate;
+        this.date_submitted = date_submitted;
     }
 
     public int getId() {
@@ -46,11 +46,11 @@ public class NewSpaper {
         this.content = content;
     }
 
-    public String getCreateDate() {
-        return createDate;
+    public String getDate_submitted() {
+        return date_submitted;
     }
 
-    public void setCreateDate(String createDate) {
-        this.createDate = createDate;
+    public void setDate_submitted(String date_submitted) {
+        this.date_submitted = date_submitted;
     }
 }

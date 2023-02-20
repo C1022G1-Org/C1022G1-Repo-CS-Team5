@@ -20,16 +20,15 @@
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-<a href="/newspaper?action=createNew" class="btn btn-secondary mb-4">Thêm mới NewSpaper</a>
+<a href="/newspaper?action=addNew" class="btn btn-secondary mb-4">Thêm mới NewSpaper</a>
 <table class="table">
     <thead>
     <tr>
         <th>STT</th>
         <th>Title</th>
         <th>Content</th>
-        <th>CreateDate</th>
+        <th>DateSubmitted</th>
         <th>Edit</th>
-        <th>Delete</th>
     </tr>
     </thead>
     <tbody>
@@ -38,7 +37,8 @@
             <td>${stt.count}</td>
             <td>${newSpaper.title}</td>
             <td>${newSpaper.content}</td>
-            <td>${newSpaper.createDate}</td>
+            <td>${newSpaper.date_submitted}</td>
+<%--            <td><a href="/newspaper?action=updateNew&id=${newSpaper.new_id}" class="btn btn-primary">Cập Nhật</a></td>--%>
         </tr>
     </c:forEach>
     </tbody>
