@@ -47,7 +47,7 @@
                          class="bi bi-star-fill" viewBox="0 0 16 16">
                         <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
                     </svg>
-                    <a class="nav-link" href="/view/newspaper/createNew.jsp">Thêm Bài Viết</a>
+                    <a class="nav-link" href="/view/newspaper/addNew.jsp">Thêm Bài Viết</a>
                 </li>
                 <li class="nav-item text-center">
                     <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
@@ -55,7 +55,7 @@
                         <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0Zm-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
                         <path d="M2 13c0 1 1 1 1 1h5.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.544-3.393C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4Z"/>
                     </svg>
-                    <a class="nav-link" href="/view/newspaper/editNew.jsp">Chỉnh Sửa Bài Viết</a>
+                    <a class="nav-link" href="/view/newspaper/updateNew.jsp">Chỉnh Sửa Bài Viết</a>
                 </li>
                 <li class="nav-item text-center">
                     <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
