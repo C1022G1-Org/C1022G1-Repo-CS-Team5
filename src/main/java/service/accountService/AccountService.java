@@ -5,6 +5,8 @@ import repository.IAccountRepository;
 import repository.account.AccountRepository;
 import service.IAccountService;
 
+import java.sql.SQLException;
+
 public class AccountService implements IAccountService {
     IAccountRepository iAccountRepository = new AccountRepository();
 
@@ -14,7 +16,7 @@ public class AccountService implements IAccountService {
     }
 
     @Override
-    public Account login(String name, String password) {
+    public Account login(String name, String password) throws SQLException {
        return iAccountRepository.login(name, password);
     }
 }
