@@ -80,8 +80,6 @@
                     <button type="submit" class="btn btn-info m-3">Đăng Nhập</button>
                 </a>
             </form>
-
-
             <a href="/account?action=register">
                 <button type="submit" class="btn btn-primary">Đăng ký</button>
             </a>

@@ -75,6 +75,9 @@
                     <a class="nav-link" href="#">Tài Trợ</a>
                 </li>
             </ul>
+            <a href="/account?action=logout">
+                <button type="submit" class="btn btn-primary">Đăng xuất</button>
+            </a>
         </div>
     </div>
 </nav>
