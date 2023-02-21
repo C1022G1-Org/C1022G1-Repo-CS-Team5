@@ -75,13 +75,8 @@
                     <a class="nav-link" href="#">Tài Trợ</a>
                 </li>
             </ul>
-            <form action="/account?action=login" method="post">
-                <a>
-                    <button type="submit" class="btn btn-info m-3">Đăng Nhập</button>
-                </a>
-            </form>
-            <a href="/account?action=register">
-                <button type="submit" class="btn btn-primary">Đăng ký</button>
+            <a href="/account?action=logout">
+                <button type="submit" class="btn btn-primary">Đăng xuất</button>
             </a>
         </div>
     </div>
@@ -245,3 +240,4 @@
         integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
         crossorigin="anonymous"></script>
 </html>
+
