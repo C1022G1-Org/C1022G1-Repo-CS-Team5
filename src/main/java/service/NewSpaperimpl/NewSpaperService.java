@@ -12,6 +12,11 @@ public class NewSpaperService implements INewSpaperService {
     INewSpaperRepository iCharityRepository = new NewSpaperRepository();
 
     @Override
+    public List<NewSpaper> findAll() {
+        return iCharityRepository.findAll();
+    }
+
+    @Override
     public void add(NewSpaper newSpaper) {
         iCharityRepository.add(newSpaper);
     }
