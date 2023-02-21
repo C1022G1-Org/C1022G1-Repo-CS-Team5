@@ -38,12 +38,16 @@ public class NewSpaperServlet extends HttpServlet {
         String title = request.getParameter("title");
         String content = request.getParameter("content");
         String date_submitted = request.getParameter("date_submitted");
+        int account_id = Integer.parseInt(request.getParameter("account_id"));
+        int catalogi_id = Integer.parseInt(request.getParameter("catalogi_id"));
         int new_id = Integer.parseInt(request.getParameter("new_id"));
 
         NewSpaper newSpaper = iNewSpaperService.finByID(new_id);
         newSpaper.setTitle(title);
         newSpaper.setContent(content);
         newSpaper.setDate_submitted(date_submitted);
+        newSpaper.setAccount_id(account_id);
+        newSpaper.setCatalogi_id(catalogi_id);
         iNewSpaperService.update(newSpaper);
         try {
             response.sendRedirect("/newspaper");
@@ -56,7 +60,9 @@ public class NewSpaperServlet extends HttpServlet {
         String title = request.getParameter("title");
         String content = request.getParameter("content");
         String date_submitted = request.getParameter("date_submitted");
-        NewSpaper newSpaper = new NewSpaper(title,content,date_submitted);
+        int account_id = Integer.parseInt(request.getParameter("account_id"));
+        int catalogi_id = Integer.parseInt(request.getParameter("catalogi_id"));
+        NewSpaper newSpaper = new NewSpaper(title,content,date_submitted,account_id,catalogi_id);
         iNewSpaperService.add(newSpaper);
         try {
             response.sendRedirect("/newspaper");
@@ -98,6 +104,7 @@ public class NewSpaperServlet extends HttpServlet {
     }
 
     private void showAdd(HttpServletRequest request, HttpServletResponse response) {
+        request.setAttribute("newSpaper",iNewSpaperService.findAll());
         try {
             request.getRequestDispatcher("/view/newspaper/addNew.jsp").forward(request,response);
         } catch (ServletException e) {

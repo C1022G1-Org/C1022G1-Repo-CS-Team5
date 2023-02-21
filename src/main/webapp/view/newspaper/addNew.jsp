@@ -31,11 +31,11 @@
     <a href="/newspaper">List All Newspaper</a>
 </h2>
 <div>
-    <form method="post">
-<%--        <div class="form-group">--%>
-<%--            <label for="id">Input ID</label>--%>
-<%--            <input type="text" class="form-control" name="id" id="id">--%>
-<%--        </div>--%>
+    <form action="/newspaper?action=addNew" method="post">
+        <%--        <div class="form-group">--%>
+        <%--            <label for="id">Input ID</label>--%>
+        <%--            <input type="text" class="form-control" name="id" id="id">--%>
+        <%--        </div>--%>
         <div class="form-group">
             <label for="title">Input Title</label>
             <input type="text" class="form-control" name="title" id="title">
@@ -45,8 +45,16 @@
             <input type="text" class="form-control" name="content" id="content">
         </div>
         <div class="form-group">
-            <label for="createDate">Input Create Date</label>
-            <input type="text" class="form-control" name="createDate" id="createDate">
+            <label for="date_submitted">Input Create Date</label>
+            <input type="text" class="form-control" name="date_submitted" id="date_submitted">
+        </div>
+        <div class="form-group">
+            <label for="account_id">Input Account ID</label>
+            <input type="text" class="form-control" name="account_id" id="account_id">
+        </div>
+        <div class="form-group">
+            <label for="catalogi_id">Input Catalogi ID</label>
+            <input type="text" class="form-control" name="catalogi_id" id="catalogi_id">
         </div>
         <input class="btn btn-primary" type="submit" value="Tạo">
     </form>

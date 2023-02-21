@@ -28,6 +28,8 @@
         <th>Title</th>
         <th>Content</th>
         <th>DateSubmitted</th>
+        <th>AccountId</th>
+        <th>CatalogiId</th>
         <th>Edit</th>
     </tr>
     </thead>
@@ -38,6 +40,8 @@
             <td>${newSpaper.title}</td>
             <td>${newSpaper.content}</td>
             <td>${newSpaper.date_submitted}</td>
+            <td>${newSpaper.account_id}</td>
+            <td>${newSpaper.catalogi_id}</td>
 <%--            <td><a href="/newspaper?action=updateNew&id=${newSpaper.new_id}" class="btn btn-primary">Cập Nhật</a></td>--%>
         </tr>
     </c:forEach>
