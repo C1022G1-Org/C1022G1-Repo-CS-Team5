@@ -180,7 +180,8 @@
                  style="height: 60px" width="200px">
         </a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="
+    margin-top: 20px;">
                 <li class="nav-item text-center">
                     <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
                          class="bi bi-newspaper" viewBox="0 0 16 16">
@@ -283,7 +284,7 @@
                             <div class="invalid-feedback">Vui lòng xác nhận rằng tất cả dữ liệu đã nhập đều chính xác!</div>
                         </div>
                         <a href="/account?action=register" class="form-button mt-3">
-                            <button id="submit" type="submit" class="btn btn-primary">Register</button>
+                            <button id="submit" type="submit" class="btn btn-primary">Đăng ký</button>
                         </a>
                     </form>
                 </div>
